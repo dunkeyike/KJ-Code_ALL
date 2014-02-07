@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0698E0717FC60550003C78A /* searchHistory.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0698E0617FC60550003C78A /* searchHistory.plist */; };
+		C0796C2D17FC237600DB2BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C2C17FC237600DB2BFA /* Foundation.framework */; };
+		C0796C2F17FC237600DB2BFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C2E17FC237600DB2BFA /* CoreGraphics.framework */; };
+		C0796C3117FC237600DB2BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C3017FC237600DB2BFA /* UIKit.framework */; };
+		C0796C3717FC237600DB2BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0796C3517FC237600DB2BFA /* InfoPlist.strings */; };
+		C0796C3917FC237600DB2BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C3817FC237600DB2BFA /* main.m */; };
+		C0796C3D17FC237600DB2BFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C3C17FC237600DB2BFA /* AppDelegate.m */; };
+		C0796C4017FC237600DB2BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0796C3E17FC237600DB2BFA /* Main.storyboard */; };
+		C0796C4317FC237600DB2BFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C4217FC237600DB2BFA /* ViewController.m */; };
+		C0796C4517FC237600DB2BFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0796C4417FC237600DB2BFA /* Images.xcassets */; };
+		C0796C4C17FC237600DB2BFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C4B17FC237600DB2BFA /* XCTest.framework */; };
+		C0796C4D17FC237600DB2BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C2C17FC237600DB2BFA /* Foundation.framework */; };
+		C0796C4E17FC237600DB2BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0796C3017FC237600DB2BFA /* UIKit.framework */; };
+		C0796C5617FC237600DB2BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0796C5417FC237600DB2BFA /* InfoPlist.strings */; };
+		C0796C5817FC237600DB2BFA /* KJSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C5717FC237600DB2BFA /* KJSearchTests.m */; };
+		C0796C6317FC256C00DB2BFA /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C6217FC256C00DB2BFA /* ResultViewController.m */; };
+		C0796C6617FC257D00DB2BFA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0796C6517FC257D00DB2BFA /* WebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0796C4F17FC237600DB2BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0796C2117FC237600DB2BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0796C2817FC237600DB2BFA;
+			remoteInfo = KJSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0698E0617FC60550003C78A /* searchHistory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = searchHistory.plist; sourceTree = "<group>"; };
+		C0796C2917FC237600DB2BFA /* KJSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0796C2C17FC237600DB2BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0796C2E17FC237600DB2BFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0796C3017FC237600DB2BFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0796C3417FC237600DB2BFA /* KJSearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KJSearch-Info.plist"; sourceTree = "<group>"; };
+		C0796C3617FC237600DB2BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0796C3817FC237600DB2BFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0796C3A17FC237600DB2BFA /* KJSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KJSearch-Prefix.pch"; sourceTree = "<group>"; };
+		C0796C3B17FC237600DB2BFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0796C3C17FC237600DB2BFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0796C3F17FC237600DB2BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0796C4117FC237600DB2BFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0796C4217FC237600DB2BFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0796C4417FC237600DB2BFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0796C4A17FC237600DB2BFA /* KJSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0796C4B17FC237600DB2BFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C0796C5317FC237600DB2BFA /* KJSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KJSearchTests-Info.plist"; sourceTree = "<group>"; };
+		C0796C5517FC237600DB2BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0796C5717FC237600DB2BFA /* KJSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJSearchTests.m; sourceTree = "<group>"; };
+		C0796C6117FC256C00DB2BFA /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		C0796C6217FC256C00DB2BFA /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		C0796C6417FC257D00DB2BFA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C0796C6517FC257D00DB2BFA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0796C2617FC237600DB2BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C2F17FC237600DB2BFA /* CoreGraphics.framework in Frameworks */,
+				C0796C3117FC237600DB2BFA /* UIKit.framework in Frameworks */,
+				C0796C2D17FC237600DB2BFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0796C4717FC237600DB2BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C4C17FC237600DB2BFA /* XCTest.framework in Frameworks */,
+				C0796C4E17FC237600DB2BFA /* UIKit.framework in Frameworks */,
+				C0796C4D17FC237600DB2BFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0796C2017FC237600DB2BFA = {
+			isa = PBXGroup;
+			children = (
+				C0796C3217FC237600DB2BFA /* KJSearch */,
+				C0796C5117FC237600DB2BFA /* KJSearchTests */,
+				C0796C2B17FC237600DB2BFA /* Frameworks */,
+				C0796C2A17FC237600DB2BFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0796C2A17FC237600DB2BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C2917FC237600DB2BFA /* KJSearch.app */,
+				C0796C4A17FC237600DB2BFA /* KJSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0796C2B17FC237600DB2BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C2C17FC237600DB2BFA /* Foundation.framework */,
+				C0796C2E17FC237600DB2BFA /* CoreGraphics.framework */,
+				C0796C3017FC237600DB2BFA /* UIKit.framework */,
+				C0796C4B17FC237600DB2BFA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0796C3217FC237600DB2BFA /* KJSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C3B17FC237600DB2BFA /* AppDelegate.h */,
+				C0796C3C17FC237600DB2BFA /* AppDelegate.m */,
+				C0796C3E17FC237600DB2BFA /* Main.storyboard */,
+				C0796C4117FC237600DB2BFA /* ViewController.h */,
+				C0796C4217FC237600DB2BFA /* ViewController.m */,
+				C0796C6117FC256C00DB2BFA /* ResultViewController.h */,
+				C0796C6217FC256C00DB2BFA /* ResultViewController.m */,
+				C0796C6417FC257D00DB2BFA /* WebViewController.h */,
+				C0796C6517FC257D00DB2BFA /* WebViewController.m */,
+				C0698E0617FC60550003C78A /* searchHistory.plist */,
+				C0796C4417FC237600DB2BFA /* Images.xcassets */,
+				C0796C3317FC237600DB2BFA /* Supporting Files */,
+			);
+			path = KJSearch;
+			sourceTree = "<group>";
+		};
+		C0796C3317FC237600DB2BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C3417FC237600DB2BFA /* KJSearch-Info.plist */,
+				C0796C3517FC237600DB2BFA /* InfoPlist.strings */,
+				C0796C3817FC237600DB2BFA /* main.m */,
+				C0796C3A17FC237600DB2BFA /* KJSearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0796C5117FC237600DB2BFA /* KJSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C5717FC237600DB2BFA /* KJSearchTests.m */,
+				C0796C5217FC237600DB2BFA /* Supporting Files */,
+			);
+			path = KJSearchTests;
+			sourceTree = "<group>";
+		};
+		C0796C5217FC237600DB2BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0796C5317FC237600DB2BFA /* KJSearchTests-Info.plist */,
+				C0796C5417FC237600DB2BFA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0796C2817FC237600DB2BFA /* KJSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0796C5B17FC237600DB2BFA /* Build configuration list for PBXNativeTarget "KJSearch" */;
+			buildPhases = (
+				C0796C2517FC237600DB2BFA /* Sources */,
+				C0796C2617FC237600DB2BFA /* Frameworks */,
+				C0796C2717FC237600DB2BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJSearch;
+			productName = KJSearch;
+			productReference = C0796C2917FC237600DB2BFA /* KJSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0796C4917FC237600DB2BFA /* KJSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0796C5E17FC237600DB2BFA /* Build configuration list for PBXNativeTarget "KJSearchTests" */;
+			buildPhases = (
+				C0796C4617FC237600DB2BFA /* Sources */,
+				C0796C4717FC237600DB2BFA /* Frameworks */,
+				C0796C4817FC237600DB2BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0796C5017FC237600DB2BFA /* PBXTargetDependency */,
+			);
+			name = KJSearchTests;
+			productName = KJSearchTests;
+			productReference = C0796C4A17FC237600DB2BFA /* KJSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0796C2117FC237600DB2BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Dunkey;
+				TargetAttributes = {
+					C0796C4917FC237600DB2BFA = {
+						TestTargetID = C0796C2817FC237600DB2BFA;
+					};
+				};
+			};
+			buildConfigurationList = C0796C2417FC237600DB2BFA /* Build configuration list for PBXProject "KJSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0796C2017FC237600DB2BFA;
+			productRefGroup = C0796C2A17FC237600DB2BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0796C2817FC237600DB2BFA /* KJSearch */,
+				C0796C4917FC237600DB2BFA /* KJSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0796C2717FC237600DB2BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C4517FC237600DB2BFA /* Images.xcassets in Resources */,
+				C0698E0717FC60550003C78A /* searchHistory.plist in Resources */,
+				C0796C3717FC237600DB2BFA /* InfoPlist.strings in Resources */,
+				C0796C4017FC237600DB2BFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0796C4817FC237600DB2BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C5617FC237600DB2BFA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0796C2517FC237600DB2BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C4317FC237600DB2BFA /* ViewController.m in Sources */,
+				C0796C6617FC257D00DB2BFA /* WebViewController.m in Sources */,
+				C0796C3D17FC237600DB2BFA /* AppDelegate.m in Sources */,
+				C0796C3917FC237600DB2BFA /* main.m in Sources */,
+				C0796C6317FC256C00DB2BFA /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0796C4617FC237600DB2BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0796C5817FC237600DB2BFA /* KJSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0796C5017FC237600DB2BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0796C2817FC237600DB2BFA /* KJSearch */;
+			targetProxy = C0796C4F17FC237600DB2BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0796C3517FC237600DB2BFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0796C3617FC237600DB2BFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0796C3E17FC237600DB2BFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0796C3F17FC237600DB2BFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0796C5417FC237600DB2BFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0796C5517FC237600DB2BFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0796C5917FC237600DB2BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0796C5A17FC237600DB2BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0796C5C17FC237600DB2BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KJSearch/KJSearch-Prefix.pch";
+				INFOPLIST_FILE = "KJSearch/KJSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0796C5D17FC237600DB2BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KJSearch/KJSearch-Prefix.pch";
+				INFOPLIST_FILE = "KJSearch/KJSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0796C5F17FC237600DB2BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KJSearch.app/KJSearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KJSearch/KJSearch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KJSearchTests/KJSearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C0796C6017FC237600DB2BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KJSearch.app/KJSearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KJSearch/KJSearch-Prefix.pch";
+				INFOPLIST_FILE = "KJSearchTests/KJSearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0796C2417FC237600DB2BFA /* Build configuration list for PBXProject "KJSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0796C5917FC237600DB2BFA /* Debug */,
+				C0796C5A17FC237600DB2BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0796C5B17FC237600DB2BFA /* Build configuration list for PBXNativeTarget "KJSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0796C5C17FC237600DB2BFA /* Debug */,
+				C0796C5D17FC237600DB2BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0796C5E17FC237600DB2BFA /* Build configuration list for PBXNativeTarget "KJSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0796C5F17FC237600DB2BFA /* Debug */,
+				C0796C6017FC237600DB2BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0796C2117FC237600DB2BFA /* Project object */;
+}

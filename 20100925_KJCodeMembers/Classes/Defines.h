@@ -1,0 +1,1 @@
+#define MY_FILE_PATH @"member.plist"
