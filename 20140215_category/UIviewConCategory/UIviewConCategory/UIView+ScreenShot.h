@@ -1,5 +1,5 @@
 //
-//  UILabel+AutoSize.h
+//  UIView+ScreenShot.h
 //  UIviewConCategory
 //
 //  Created by Dunkey on 2014. 2. 12..
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (AutoSize)
+@interface UIView (ScreenShot)
 
-// instance method define
-- (void) autosizeForWidth: (int) width;
-
+// make screen shot image
+- (UIImage*)screenshot;
 @end

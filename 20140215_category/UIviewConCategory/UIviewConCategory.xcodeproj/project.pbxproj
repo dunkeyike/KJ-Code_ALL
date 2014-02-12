@@ -26,6 +26,7 @@
 		C06EE81E18A3887F00A0B0A0 /* UIViewController+OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C06EE81D18A3887F00A0B0A0 /* UIViewController+OverlayView.m */; };
 		C0C2BFD318AB0C1C00801627 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C2BFD218AB0C1C00801627 /* UILabel+AutoSize.m */; };
 		C0C2BFD618AB1F3800801627 /* NSUserDefaults+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C2BFD518AB1F3800801627 /* NSUserDefaults+Addition.m */; };
+		C0C2BFDA18AB6A3D00801627 /* UIView+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C2BFD918AB6A3D00801627 /* UIView+ScreenShot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C0C2BFD218AB0C1C00801627 /* UILabel+AutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoSize.m"; sourceTree = "<group>"; };
 		C0C2BFD418AB1F3800801627 /* NSUserDefaults+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Addition.h"; sourceTree = "<group>"; };
 		C0C2BFD518AB1F3800801627 /* NSUserDefaults+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Addition.m"; sourceTree = "<group>"; };
+		C0C2BFD818AB6A3D00801627 /* UIView+ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScreenShot.h"; sourceTree = "<group>"; };
+		C0C2BFD918AB6A3D00801627 /* UIView+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScreenShot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				C04D2DD518A8A9F3001F2CAF /* UIColor+UserDefineColor.m */,
 				C04D2DD718A8B644001F2CAF /* UIImage+blur.h */,
 				C04D2DD818A8B644001F2CAF /* UIImage+blur.m */,
+				C0C2BFD818AB6A3D00801627 /* UIView+ScreenShot.h */,
+				C0C2BFD918AB6A3D00801627 /* UIView+ScreenShot.m */,
 				C0C2BFD118AB0C1C00801627 /* UILabel+AutoSize.h */,
 				C0C2BFD218AB0C1C00801627 /* UILabel+AutoSize.m */,
 				C0C2BFD418AB1F3800801627 /* NSUserDefaults+Addition.h */,
@@ -284,6 +289,7 @@
 			files = (
 				C06EE7FE18A3884F00A0B0A0 /* ViewController.m in Sources */,
 				C06EE7F818A3884F00A0B0A0 /* AppDelegate.m in Sources */,
+				C0C2BFDA18AB6A3D00801627 /* UIView+ScreenShot.m in Sources */,
 				C04D2DD918A8B644001F2CAF /* UIImage+blur.m in Sources */,
 				C0C2BFD618AB1F3800801627 /* NSUserDefaults+Addition.m in Sources */,
 				C06EE81E18A3887F00A0B0A0 /* UIViewController+OverlayView.m in Sources */,

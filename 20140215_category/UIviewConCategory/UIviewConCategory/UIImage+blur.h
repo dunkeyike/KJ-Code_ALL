@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+// i use wwdc UIImage+effect
+
 @interface UIImage (blur)
+// instance method define
 - (UIImage *)applyLightEffect;
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
 @end

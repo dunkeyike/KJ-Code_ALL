@@ -11,9 +11,10 @@
 #import "UIColor+UserDefineColor.h"
 #import "UILabel+AutoSize.h"
 #import "NSUserDefaults+Addition.h"
+#import "UIView+ScreenShot.h"
 
 @interface ViewController ()
-@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation ViewController
@@ -21,35 +22,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// make blend color with 2 colors with use UIColor+UserDefineColor
 	self.view.backgroundColor = [UIColor blendedColorWithForegroundColor:[UIColor user_waterColor] backgroundColor:[UIColor user_lightPinkColor] percentBlend:0.8];
 	self.view.tintColor = [UIColor redColor];
 	
-	self.imageView.image = [UIImage imageNamed:@"DisplayImage"];
-	
+	// test UILabel
 	UILabel *lblTest = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 0)];
-	lblTest.layer.borderWidth = 2;
-	lblTest.layer.borderColor = [UIColor redColor].CGColor;
-	lblTest.textColor = [UIColor redColor];
-	lblTest.text = @"k;asjdf;klasdjf;alksdjfal;skdfjkasdfljkasdhfljkasdhlfakjsdhflaskdjfhalsdkfjhalsdkfjhalsdkjfhalsdfkjhasldfkjhasldfkjahsdlfjakhsdflasjdkfhalsdkjfhalsdkfjhasdlfkjh";
+	lblTest.textColor = [UIColor whiteColor];
+	lblTest.text = @"今日はiOS Objective-Cの文法のカテゴリについて説明をしました。\n오늘은 iOS Objective-C문법중 카테고리에 대해서 설명했습니다. \nToday we learn Objective-C Category synax";
+
+	// auto size with UILabel+AutoSize
 	[lblTest autosizeForWidth:lblTest.frame.size.width];
 	lblTest.center = self.view.center;
 	[self.view addSubview:lblTest];
-	// use NSUserDefault Category
+	
+	// use NSUserDefaults+Addition Category
 	[NSUserDefaults setUserName:@"DunkeyDev"];
 	[NSUserDefaults sync];
 	
 	// use default NSUserDefault
 	[[NSUserDefaults standardUserDefaults]setObject:@"DunkeyDev" forKey:@"userName_Temp"];
 	[[NSUserDefaults standardUserDefaults]synchronize];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	
+	UIImage *tempImage = [[UIImage alloc] init];
+	tempImage = [self.view screenshot];
 }
 
 - (IBAction)onShowOverlayView:(id)sender {
+	// senf message to self category instance method
 	[self showBlurLayer:@"MESSAGE To SHOW!!!!"];
 }
 @end
