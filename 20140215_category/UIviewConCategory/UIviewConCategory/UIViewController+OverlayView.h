@@ -10,7 +10,7 @@
 
 @interface UIViewController (OverlayView)
 
-- (void) showLayer:(NSString *)message;
-- (void) hideLayer;
+- (void) showBlurLayer:(NSString *)message;
+- (void) hideBlurLayer;
 
 @end

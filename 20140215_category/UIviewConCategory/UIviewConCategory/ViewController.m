@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import "UIViewController+OverlayView.h"
+#import "UIColor+UserDefineColor.h"
+#import "UILabel+AutoSize.h"
+#import "NSUserDefaults+Addition.h"
 
 @interface ViewController ()
-
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -18,11 +21,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	self.view.backgroundColor = [UIColor blendedColorWithForegroundColor:[UIColor user_waterColor] backgroundColor:[UIColor user_lightPinkColor] percentBlend:0.8];
+	self.view.tintColor = [UIColor redColor];
 	
+	self.imageView.image = [UIImage imageNamed:@"DisplayImage"];
+	
+	UILabel *lblTest = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 0)];
+	lblTest.layer.borderWidth = 2;
+	lblTest.layer.borderColor = [UIColor redColor].CGColor;
+	lblTest.textColor = [UIColor redColor];
+	lblTest.text = @"k;asjdf;klasdjf;alksdjfal;skdfjkasdfljkasdhfljkasdhlfakjsdhflaskdjfhalsdkfjhalsdkfjhalsdkjfhalsdfkjhasldfkjhasldfkjahsdlfjakhsdflasjdkfhalsdkjfhalsdkfjhasdlfkjh";
+	[lblTest autosizeForWidth:lblTest.frame.size.width];
+	lblTest.center = self.view.center;
+	[self.view addSubview:lblTest];
+	// use NSUserDefault Category
+	[NSUserDefaults setUserName:@"DunkeyDev"];
+	[NSUserDefaults sync];
+	
+	// use default NSUserDefault
+	[[NSUserDefaults standardUserDefaults]setObject:@"DunkeyDev" forKey:@"userName_Temp"];
+	[[NSUserDefaults standardUserDefaults]synchronize];
 }
-- (void) onHideLayer {
-	[self hideLayer];
-}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -30,9 +50,6 @@
 }
 
 - (IBAction)onShowOverlayView:(id)sender {
-	[self showLayer:@"MESSAGE To SHOW!!!!"];
-	
-//	[self performSelector:@selector(onHideLayer) withObject:nil afterDelay:3.0f];
-
+	[self showBlurLayer:@"MESSAGE To SHOW!!!!"];
 }
 @end
