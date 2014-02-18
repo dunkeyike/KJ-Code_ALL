@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0B3537B18B330DC00FCD3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3537A18B330DC00FCD3F1 /* Foundation.framework */; };
+		C0B3537D18B330DC00FCD3F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3537C18B330DC00FCD3F1 /* CoreGraphics.framework */; };
+		C0B3537F18B330DC00FCD3F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3537E18B330DC00FCD3F1 /* UIKit.framework */; };
+		C0B3538518B330DC00FCD3F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0B3538318B330DC00FCD3F1 /* InfoPlist.strings */; };
+		C0B3538718B330DC00FCD3F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B3538618B330DC00FCD3F1 /* main.m */; };
+		C0B3538B18B330DC00FCD3F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B3538A18B330DC00FCD3F1 /* AppDelegate.m */; };
+		C0B3538E18B330DC00FCD3F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B3538C18B330DC00FCD3F1 /* Main.storyboard */; };
+		C0B3539118B330DC00FCD3F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B3539018B330DC00FCD3F1 /* ViewController.m */; };
+		C0B3539318B330DC00FCD3F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B3539218B330DC00FCD3F1 /* Images.xcassets */; };
+		C0B3539A18B330DC00FCD3F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3539918B330DC00FCD3F1 /* XCTest.framework */; };
+		C0B3539B18B330DC00FCD3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3537A18B330DC00FCD3F1 /* Foundation.framework */; };
+		C0B3539C18B330DC00FCD3F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3537E18B330DC00FCD3F1 /* UIKit.framework */; };
+		C0B353A418B330DC00FCD3F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0B353A218B330DC00FCD3F1 /* InfoPlist.strings */; };
+		C0B353A618B330DC00FCD3F1 /* JumpBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353A518B330DC00FCD3F1 /* JumpBirdTests.m */; };
+		C0B353B018B333E800FCD3F1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B353AF18B333E800FCD3F1 /* SpriteKit.framework */; };
+		C0B353B418B3349A00FCD3F1 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353B318B3349A00FCD3F1 /* Scene.m */; };
+		C0B353B818B334F800FCD3F1 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353B718B334F800FCD3F1 /* Score.m */; };
+		C0B353BC18B3352D00FCD3F1 /* SKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353BB18B3352D00FCD3F1 /* SKScrollingNode.m */; };
+		C0B353BF18B3354A00FCD3F1 /* PipeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353BE18B3354A00FCD3F1 /* PipeNode.m */; };
+		C0B353C218B3355C00FCD3F1 /* BirdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B353C118B3355C00FCD3F1 /* BirdNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0B3539D18B330DC00FCD3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0B3536F18B330DC00FCD3F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B3537618B330DC00FCD3F1;
+			remoteInfo = JumpBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0B3537718B330DC00FCD3F1 /* JumpBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B3537A18B330DC00FCD3F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0B3537C18B330DC00FCD3F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0B3537E18B330DC00FCD3F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0B3538218B330DC00FCD3F1 /* JumpBird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JumpBird-Info.plist"; sourceTree = "<group>"; };
+		C0B3538418B330DC00FCD3F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0B3538618B330DC00FCD3F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0B3538818B330DC00FCD3F1 /* JumpBird-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JumpBird-Prefix.pch"; sourceTree = "<group>"; };
+		C0B3538918B330DC00FCD3F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0B3538A18B330DC00FCD3F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0B3538D18B330DC00FCD3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0B3538F18B330DC00FCD3F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0B3539018B330DC00FCD3F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0B3539218B330DC00FCD3F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0B3539818B330DC00FCD3F1 /* JumpBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B3539918B330DC00FCD3F1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C0B353A118B330DC00FCD3F1 /* JumpBirdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JumpBirdTests-Info.plist"; sourceTree = "<group>"; };
+		C0B353A318B330DC00FCD3F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0B353A518B330DC00FCD3F1 /* JumpBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpBirdTests.m; sourceTree = "<group>"; };
+		C0B353AF18B333E800FCD3F1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		C0B353B218B3349A00FCD3F1 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		C0B353B318B3349A00FCD3F1 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		C0B353B618B334F800FCD3F1 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		C0B353B718B334F800FCD3F1 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		C0B353BA18B3352D00FCD3F1 /* SKScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrollingNode.h; sourceTree = "<group>"; };
+		C0B353BB18B3352D00FCD3F1 /* SKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrollingNode.m; sourceTree = "<group>"; };
+		C0B353BD18B3354A00FCD3F1 /* PipeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PipeNode.h; sourceTree = "<group>"; };
+		C0B353BE18B3354A00FCD3F1 /* PipeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PipeNode.m; sourceTree = "<group>"; };
+		C0B353C018B3355C00FCD3F1 /* BirdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdNode.h; sourceTree = "<group>"; };
+		C0B353C118B3355C00FCD3F1 /* BirdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdNode.m; sourceTree = "<group>"; };
+		C0B353C518B335CD00FCD3F1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0B3537418B330DC00FCD3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B353B018B333E800FCD3F1 /* SpriteKit.framework in Frameworks */,
+				C0B3537D18B330DC00FCD3F1 /* CoreGraphics.framework in Frameworks */,
+				C0B3537F18B330DC00FCD3F1 /* UIKit.framework in Frameworks */,
+				C0B3537B18B330DC00FCD3F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B3539518B330DC00FCD3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B3539A18B330DC00FCD3F1 /* XCTest.framework in Frameworks */,
+				C0B3539C18B330DC00FCD3F1 /* UIKit.framework in Frameworks */,
+				C0B3539B18B330DC00FCD3F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0B3536E18B330DC00FCD3F1 = {
+			isa = PBXGroup;
+			children = (
+				C0B3538018B330DC00FCD3F1 /* JumpBird */,
+				C0B3539F18B330DC00FCD3F1 /* JumpBirdTests */,
+				C0B3537918B330DC00FCD3F1 /* Frameworks */,
+				C0B3537818B330DC00FCD3F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0B3537818B330DC00FCD3F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3537718B330DC00FCD3F1 /* JumpBird.app */,
+				C0B3539818B330DC00FCD3F1 /* JumpBirdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0B3537918B330DC00FCD3F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353AF18B333E800FCD3F1 /* SpriteKit.framework */,
+				C0B3537A18B330DC00FCD3F1 /* Foundation.framework */,
+				C0B3537C18B330DC00FCD3F1 /* CoreGraphics.framework */,
+				C0B3537E18B330DC00FCD3F1 /* UIKit.framework */,
+				C0B3539918B330DC00FCD3F1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0B3538018B330DC00FCD3F1 /* JumpBird */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353C418B335A400FCD3F1 /* Common Define */,
+				C0B3538918B330DC00FCD3F1 /* AppDelegate.h */,
+				C0B3538A18B330DC00FCD3F1 /* AppDelegate.m */,
+				C0B353B918B3350500FCD3F1 /* Model */,
+				C0B353B118B3345700FCD3F1 /* Main View Controller */,
+				C0B353B518B334C200FCD3F1 /* Main Game Scene */,
+				C0B3538C18B330DC00FCD3F1 /* Main.storyboard */,
+				C0B3539218B330DC00FCD3F1 /* Images.xcassets */,
+				C0B3538118B330DC00FCD3F1 /* Supporting Files */,
+			);
+			path = JumpBird;
+			sourceTree = "<group>";
+		};
+		C0B3538118B330DC00FCD3F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3538218B330DC00FCD3F1 /* JumpBird-Info.plist */,
+				C0B3538318B330DC00FCD3F1 /* InfoPlist.strings */,
+				C0B3538618B330DC00FCD3F1 /* main.m */,
+				C0B3538818B330DC00FCD3F1 /* JumpBird-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0B3539F18B330DC00FCD3F1 /* JumpBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353A518B330DC00FCD3F1 /* JumpBirdTests.m */,
+				C0B353A018B330DC00FCD3F1 /* Supporting Files */,
+			);
+			path = JumpBirdTests;
+			sourceTree = "<group>";
+		};
+		C0B353A018B330DC00FCD3F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353A118B330DC00FCD3F1 /* JumpBirdTests-Info.plist */,
+				C0B353A218B330DC00FCD3F1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0B353B118B3345700FCD3F1 /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3538F18B330DC00FCD3F1 /* ViewController.h */,
+				C0B3539018B330DC00FCD3F1 /* ViewController.m */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		C0B353B518B334C200FCD3F1 /* Main Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353B218B3349A00FCD3F1 /* Scene.h */,
+				C0B353B318B3349A00FCD3F1 /* Scene.m */,
+				C0B353C318B3356400FCD3F1 /* Nodes */,
+			);
+			name = "Main Game Scene";
+			sourceTree = "<group>";
+		};
+		C0B353B918B3350500FCD3F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353B618B334F800FCD3F1 /* Score.h */,
+				C0B353B718B334F800FCD3F1 /* Score.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C0B353C318B3356400FCD3F1 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353BA18B3352D00FCD3F1 /* SKScrollingNode.h */,
+				C0B353BB18B3352D00FCD3F1 /* SKScrollingNode.m */,
+				C0B353BD18B3354A00FCD3F1 /* PipeNode.h */,
+				C0B353BE18B3354A00FCD3F1 /* PipeNode.m */,
+				C0B353C018B3355C00FCD3F1 /* BirdNode.h */,
+				C0B353C118B3355C00FCD3F1 /* BirdNode.m */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		C0B353C418B335A400FCD3F1 /* Common Define */ = {
+			isa = PBXGroup;
+			children = (
+				C0B353C518B335CD00FCD3F1 /* Constants.h */,
+			);
+			name = "Common Define";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0B3537618B330DC00FCD3F1 /* JumpBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B353A918B330DC00FCD3F1 /* Build configuration list for PBXNativeTarget "JumpBird" */;
+			buildPhases = (
+				C0B3537318B330DC00FCD3F1 /* Sources */,
+				C0B3537418B330DC00FCD3F1 /* Frameworks */,
+				C0B3537518B330DC00FCD3F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JumpBird;
+			productName = JumpBird;
+			productReference = C0B3537718B330DC00FCD3F1 /* JumpBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0B3539718B330DC00FCD3F1 /* JumpBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B353AC18B330DC00FCD3F1 /* Build configuration list for PBXNativeTarget "JumpBirdTests" */;
+			buildPhases = (
+				C0B3539418B330DC00FCD3F1 /* Sources */,
+				C0B3539518B330DC00FCD3F1 /* Frameworks */,
+				C0B3539618B330DC00FCD3F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0B3539E18B330DC00FCD3F1 /* PBXTargetDependency */,
+			);
+			name = JumpBirdTests;
+			productName = JumpBirdTests;
+			productReference = C0B3539818B330DC00FCD3F1 /* JumpBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0B3536F18B330DC00FCD3F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Dunkey;
+				TargetAttributes = {
+					C0B3539718B330DC00FCD3F1 = {
+						TestTargetID = C0B3537618B330DC00FCD3F1;
+					};
+				};
+			};
+			buildConfigurationList = C0B3537218B330DC00FCD3F1 /* Build configuration list for PBXProject "JumpBird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0B3536E18B330DC00FCD3F1;
+			productRefGroup = C0B3537818B330DC00FCD3F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0B3537618B330DC00FCD3F1 /* JumpBird */,
+				C0B3539718B330DC00FCD3F1 /* JumpBirdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0B3537518B330DC00FCD3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B3539318B330DC00FCD3F1 /* Images.xcassets in Resources */,
+				C0B3538518B330DC00FCD3F1 /* InfoPlist.strings in Resources */,
+				C0B3538E18B330DC00FCD3F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B3539618B330DC00FCD3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B353A418B330DC00FCD3F1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0B3537318B330DC00FCD3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B353B418B3349A00FCD3F1 /* Scene.m in Sources */,
+				C0B353BF18B3354A00FCD3F1 /* PipeNode.m in Sources */,
+				C0B353BC18B3352D00FCD3F1 /* SKScrollingNode.m in Sources */,
+				C0B3539118B330DC00FCD3F1 /* ViewController.m in Sources */,
+				C0B353C218B3355C00FCD3F1 /* BirdNode.m in Sources */,
+				C0B353B818B334F800FCD3F1 /* Score.m in Sources */,
+				C0B3538B18B330DC00FCD3F1 /* AppDelegate.m in Sources */,
+				C0B3538718B330DC00FCD3F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B3539418B330DC00FCD3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B353A618B330DC00FCD3F1 /* JumpBirdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0B3539E18B330DC00FCD3F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0B3537618B330DC00FCD3F1 /* JumpBird */;
+			targetProxy = C0B3539D18B330DC00FCD3F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0B3538318B330DC00FCD3F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0B3538418B330DC00FCD3F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0B3538C18B330DC00FCD3F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0B3538D18B330DC00FCD3F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0B353A218B330DC00FCD3F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0B353A318B330DC00FCD3F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0B353A718B330DC00FCD3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0B353A818B330DC00FCD3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0B353AA18B330DC00FCD3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
+				INFOPLIST_FILE = "JumpBird/JumpBird-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0B353AB18B330DC00FCD3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
+				INFOPLIST_FILE = "JumpBird/JumpBird-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0B353AD18B330DC00FCD3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JumpBird.app/JumpBird";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JumpBirdTests/JumpBirdTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C0B353AE18B330DC00FCD3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JumpBird.app/JumpBird";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
+				INFOPLIST_FILE = "JumpBirdTests/JumpBirdTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0B3537218B330DC00FCD3F1 /* Build configuration list for PBXProject "JumpBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B353A718B330DC00FCD3F1 /* Debug */,
+				C0B353A818B330DC00FCD3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0B353A918B330DC00FCD3F1 /* Build configuration list for PBXNativeTarget "JumpBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B353AA18B330DC00FCD3F1 /* Debug */,
+				C0B353AB18B330DC00FCD3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0B353AC18B330DC00FCD3F1 /* Build configuration list for PBXNativeTarget "JumpBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B353AD18B330DC00FCD3F1 /* Debug */,
+				C0B353AE18B330DC00FCD3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0B3536F18B330DC00FCD3F1 /* Project object */;
+}
