@@ -10,6 +10,7 @@
 
 @interface NSUserDefaults (Addition)
 
+// it used by class method
 + (NSString*) getUserName;
 + (void) setUserName:(NSString*)userName;
 + (void) sync;

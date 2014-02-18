@@ -8,6 +8,7 @@
 
 #import "UIViewController+OverlayView.h"
 #import "UIImage+blur.h"
+#import "UIView+ScreenShot.h"
 
 @implementation UIViewController (OverlayView)
 BOOL isShow = NO;
@@ -17,8 +18,11 @@ BOOL isShow = NO;
 		isShow = YES;
 		UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
 		
+		UIImage *tempImg = [[UIImage alloc] init];
+		tempImg = [self.view screenshot];
+		
 		UIImage *effectImage = nil;
-		UIImage *tempImg = [UIImage imageNamed:@"DisplayImage"];
+//		UIImage *tempImg = [UIImage imageNamed:@"DisplayImage"];
 		effectImage = [tempImg applyLightEffect];
 		imageView.image = effectImage;
 		imageView.alpha = 0.0f;

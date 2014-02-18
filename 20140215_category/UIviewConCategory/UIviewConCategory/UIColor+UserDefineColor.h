@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (UserDefineColor)
-// 16진수 칼라값으로부터 UIColor용(0-255) 숫자로 변경해서 칼라를 만듬
+// make UIColor from 16bit string (00 - ff)
 + (UIColor *) colorFromHexCode:(NSString *)hexString;
 
-// 사용자정의 칼라
+// user define color
 + (UIColor *) user_waterColor;
 + (UIColor *) user_pinkColor;
 + (UIColor *) user_lightPinkColor;
@@ -20,7 +20,7 @@
 + (UIColor *) user_yellowColor;
 + (UIColor *) user_greenColor;
 
-// 두가지 칼라를 하나의 칼라로 만듬
+// make blend color with 2 colors
 + (UIColor *) blendedColorWithForegroundColor:(UIColor *)foregroundColor
                               backgroundColor:(UIColor *)backgroundColor
                                  percentBlend:(CGFloat) percentBlend;
