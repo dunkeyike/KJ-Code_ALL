@@ -15,7 +15,7 @@
 #define VERTICAL_GAP_SIZE 200
 #define BLOCK_WIDTH 55
 #define BLOCK_MIN_HEIGHT 40
-#define BLOCK_INTERVAL_SPACE 140
+#define BLOCK_INTERVAL_SPACE 40
 
 @implementation Scene
 
@@ -70,14 +70,14 @@
 	clouds = [SKScrollingNode spriteNodeWithImageNamed:@"clouds"];
     clouds.anchorPoint = CGPointZero;
     clouds.position = CGPointMake(0, floor.size.height + 30);
-    clouds.scrollingSpeed = .5;
+    clouds.scrollingSpeed = 1;
     clouds.alpha = .5;
     [self addChild:clouds];
     
     city = [SKScrollingNode spriteNodeWithImageNamed:@"city"];
     city.anchorPoint = CGPointZero;
     city.position = CGPointMake(0, floor.size.height);
-    city.scrollingSpeed = .7;
+    city.scrollingSpeed = 1.5;
     [self addChild:city];
 
 }
@@ -88,7 +88,7 @@
     [self addChild:bird];
 }
 - (void) createBlocks {
-	nbObstacles = 3;
+	nbObstacles = 5;
 	
 	CGFloat lastBlockPos = 0;
 //	bottomPipes = [NSMutableArray new];

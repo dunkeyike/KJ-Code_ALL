@@ -270,6 +270,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Dunkey;
 				TargetAttributes = {
+					C0B3537618B330DC00FCD3F1 = {
+						DevelopmentTeam = 5WL7T89SFN;
+					};
 					C0B3539718B330DC00FCD3F1 = {
 						TestTargetID = C0B3537618B330DC00FCD3F1;
 					};
@@ -454,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
 				INFOPLIST_FILE = "JumpBird/JumpBird-Info.plist";
@@ -467,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JumpBird/JumpBird-Prefix.pch";
 				INFOPLIST_FILE = "JumpBird/JumpBird-Info.plist";
@@ -536,6 +541,7 @@
 				C0B353AB18B330DC00FCD3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0B353AC18B330DC00FCD3F1 /* Build configuration list for PBXNativeTarget "JumpBirdTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				C0B353AE18B330DC00FCD3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
