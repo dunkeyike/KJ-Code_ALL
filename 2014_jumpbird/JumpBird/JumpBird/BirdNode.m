@@ -21,11 +21,11 @@ CGFloat lastVelocity = 0;
 }
 - (void) startPlay {
 	// 충돌판정용 범위를 정하고
-	[self setPhysicsBody:[SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(17, 10)]];
+	[self setPhysicsBody:[SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(10, 5)]];
 	// 충돌판정용 카테고리 설정
 	self.physicsBody.categoryBitMask = birdBitMask;
 	// 복원력 설정
-	self.physicsBody.restitution = 0.8;
+	self.physicsBody.restitution = 1.8;
 	// 무게설정
 	self.physicsBody.mass = 0.1;
 

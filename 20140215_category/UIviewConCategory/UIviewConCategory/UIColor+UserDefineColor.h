@@ -19,7 +19,7 @@
 + (UIColor *) user_redColor;
 + (UIColor *) user_yellowColor;
 + (UIColor *) user_greenColor;
-
++ (UIColor *) KJ_GreenColor;
 // make blend color with 2 colors
 + (UIColor *) blendedColorWithForegroundColor:(UIColor *)foregroundColor
                               backgroundColor:(UIColor *)backgroundColor

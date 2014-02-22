@@ -52,6 +52,9 @@
 + (UIColor *) user_greenColor {
 	return [UIColor colorFromHexCode:@"53b765"];
 }
++ (UIColor *) KJ_GreenColor {
+	return [UIColor colorFromHexCode:@"ffffff"];
+}
 #pragma mark - Blend Color
 + (UIColor *) blendedColorWithForegroundColor:(UIColor *)foregroundColor
                               backgroundColor:(UIColor *)backgroundColor

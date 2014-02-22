@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (OverlayView)
+@interface UIViewController (OverlayView) 
 
-- (void) showBlurLayer:(NSString *)message;
+- (void) showBlurLayer:(NSString *)message ;
 - (void) hideBlurLayer;
 
 @end

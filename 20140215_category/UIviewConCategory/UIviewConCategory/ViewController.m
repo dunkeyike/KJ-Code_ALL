@@ -12,6 +12,9 @@
 #import "UILabel+AutoSize.h"
 #import "NSUserDefaults+Addition.h"
 #import "UIView+ScreenShot.h"
+@interface UIImage(disAppear)
+- (void) disAppearImageWithTime;
+@end
 
 @interface ViewController ()
 
@@ -28,7 +31,7 @@
 	
 	// test UILabel
 	UILabel *lblTest = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 0)];
-	lblTest.textColor = [UIColor whiteColor];
+	lblTest.textColor = [UIColor KJ_GreenColor];
 	lblTest.text = @"今日はiOS Objective-Cの文法のカテゴリについて説明をしました。\n오늘은 iOS Objective-C문법중 카테고리에 대해서 설명했습니다. \nToday we learn Objective-C Category synax";
 
 	// auto size with UILabel+AutoSize
@@ -39,6 +42,7 @@
 	// use NSUserDefaults+Addition Category
 	[NSUserDefaults setUserName:@"DunkeyDev"];
 	[NSUserDefaults sync];
+	[[NSUserDefaults standardUserDefaults] setObject:@"dunkey" forKey:@"UserNAme"];
 	
 	// use default NSUserDefault
 	[[NSUserDefaults standardUserDefaults]setObject:@"DunkeyDev" forKey:@"userName_Temp"];
@@ -52,4 +56,16 @@
 	// senf message to self category instance method
 	[self showBlurLayer:@"MESSAGE To SHOW!!!!"];
 }
+
+- (void) showLog {
+	
+}
 @end
+
+@implementation UIImage
+- (void) disAppearImageWithTime {
+
+}
+@end
+
+
