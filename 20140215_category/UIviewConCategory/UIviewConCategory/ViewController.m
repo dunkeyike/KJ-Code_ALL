@@ -12,10 +12,6 @@
 #import "UILabel+AutoSize.h"
 #import "NSUserDefaults+Addition.h"
 #import "UIView+ScreenShot.h"
-@interface UIImage(disAppear)
-- (void) disAppearImageWithTime;
-@end
-
 @interface ViewController ()
 
 @end
@@ -59,12 +55,6 @@
 
 - (void) showLog {
 	
-}
-@end
-
-@implementation UIImage
-- (void) disAppearImageWithTime {
-
 }
 @end
 
