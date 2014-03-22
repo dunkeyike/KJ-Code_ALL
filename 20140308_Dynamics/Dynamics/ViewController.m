@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 @interface ViewController ()
+
 // 다이나믹 효과를 받을 빨간 뷰
 @property (nonatomic, weak) IBOutlet UIView *dropView;
+
 // 모션이펙트 효과를 받을 배경이미지
 @property (nonatomic, weak) IBOutlet UIImageView *ivBackground;
 // 다이나믹 효과의 기본 객체
@@ -37,8 +39,8 @@
 	_animtor = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     // 중력을 받을 아이템 설정
 	_gravity = [[UIGravityBehavior alloc] initWithItems:@[_dropView]];
-		
     // 객체간의 충돌판정을 위한 객체 설정
+	
 	UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[_dropView]];
     // 화면의 테두리에도 충돌판정을 할지 설정
 	collision.translatesReferenceBoundsIntoBoundary	= YES;
@@ -73,8 +75,6 @@
 	UIMotionEffectGroup *effectGroup = [UIMotionEffectGroup new];
 	effectGroup.motionEffects = @[interpolatingHorizontal, interpolatingVertical],
     [_ivBackground addMotionEffect:effectGroup];
-
-
 }
 - (void) tapView:(UITapGestureRecognizer*)gesture {
 	CGPoint point = [gesture locationInView:self.view];

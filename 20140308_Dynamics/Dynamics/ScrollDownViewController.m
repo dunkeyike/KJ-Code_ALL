@@ -19,7 +19,6 @@
 @end
 
 @implementation ScrollDownViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,18 +28,35 @@
 
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panTopView:)];
     [_vScrollView addGestureRecognizer:panGesture];
-
 }
 
 - (IBAction)onScrollUpDown:(id)sender {
 	// 뷰를 올려준다.
 	// 뷰에니메이션 이용
+	
 	if (isScrollDown) {
-		[UIView animateWithDuration:0.75 animations:^{
-			_vScrollView.frame = CGRectMake(0, -450, 320, 568);
-		} completion:^(BOOL finished) {
+		
+		[_animator removeAllBehaviors];
+		
+		UIGravityBehavior *gra = [[UIGravityBehavior alloc] initWithItems:@[_vScrollView]];
+		// 중력의 힘을설정
+		gra.gravityDirection = CGVectorMake(0, -5);
+		
+		UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[_vScrollView]];
+		[collision addBoundaryWithIdentifier:@"border2" fromPoint:CGPointMake(0, -450) toPoint:CGPointMake(320, -450)];
+		
+		[_animator addBehavior:gra];
+		[_animator addBehavior:_dropItem];
+		[_animator addBehavior:collision];
+		
+		[_animator updateItemUsingCurrentState:_vScrollView];
+		
 			isScrollDown = NO;
-		}];
+//		[UIView animateWithDuration:0.75 animations:^{
+//			_vScrollView.frame = CGRectMake(0, -450, 320, 568);
+//		} completion:^(BOOL finished) {
+//			isScrollDown = NO;
+//		}];
 	}
 	// 뷰를 내려준다
 	// 다이나믹을 이용
@@ -53,7 +69,7 @@
 		
 		UIGravityBehavior *gra = [[UIGravityBehavior alloc] initWithItems:@[_vScrollView]];
 		// 중력의 힘을설정
-		gra.magnitude = 1.0;
+		gra.magnitude = 3.0;
 		UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[_vScrollView]];
 		[collision addBoundaryWithIdentifier:@"border" fromPoint:CGPointMake(0, 569) toPoint:CGPointMake(320, 569)];
 		[_animator addBehavior:gra];
