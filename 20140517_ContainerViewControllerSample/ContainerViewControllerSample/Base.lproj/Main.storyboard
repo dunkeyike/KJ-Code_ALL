@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-Y6-Fq9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="ABK-XK-Moo"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Fd6-LA-bf0" kind="embed" id="YcR-eB-1b7"/>
+                                </connections>
+                            </containerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PZh-vs-Gf8">
+                                <rect key="frame" x="0.0" y="320" width="320" height="248"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tableCellIdentifier" textLabel="qJA-AS-nXA" style="IBUITableViewCellStyleDefault" id="ogY-OS-FTS">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogY-OS-FTS" id="aQy-KB-PJu">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qJA-AS-nXA">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="J1D-kx-tLb"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ahC-cx-bFk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3w5-Y6-Fq9" secondAttribute="trailing" id="0Od-qD-Hxn"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PZh-vs-Gf8" secondAttribute="bottom" id="GGG-xp-I5V"/>
+                            <constraint firstItem="3w5-Y6-Fq9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="QNb-zG-DBw"/>
+                            <constraint firstItem="PZh-vs-Gf8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="UV3-IO-guS"/>
+                            <constraint firstAttribute="trailing" secondItem="PZh-vs-Gf8" secondAttribute="trailing" id="q71-aM-OeK"/>
+                            <constraint firstItem="3w5-Y6-Fq9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="srL-0S-Bcj"/>
+                            <constraint firstItem="PZh-vs-Gf8" firstAttribute="top" secondItem="3w5-Y6-Fq9" secondAttribute="bottom" id="yyz-9G-c7G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vzx-Ow-hnb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="108"/>
+        </scene>
+        <!--Chalbang Image View Controller-->
+        <scene sceneID="H3F-II-Iu8">
+            <objects>
+                <viewController storyboardIdentifier="NanmonViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Apc-qB-Wvh" customClass="ChalbangImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Fj-IK-dQw"/>
+                        <viewControllerLayoutGuide type="bottom" id="GSd-B2-1cf"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kbh-vu-UOG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1252.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="4aE-G1-NyA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xCR-TO-ivg"/>
+                    <connections>
+                        <segue destination="qLp-46-UWS" kind="push" identifier="ArashiSegue" id="dWv-3f-C3R"/>
+                        <segue destination="7Tw-KJ-iF0" kind="push" identifier="SimkungSegue" id="Ekt-tO-sYq"/>
+                        <segue destination="Uge-oX-Vhm" kind="push" identifier="HakenmanSegue" id="vbl-wH-h2P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSc-la-wN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="157"/>
+        </scene>
+        <!--Chalbang Image View Controller-->
+        <scene sceneID="Sgt-oC-QOe">
+            <objects>
+                <viewController storyboardIdentifier="ArashiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qLp-46-UWS" customClass="ChalbangImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JUB-Dm-1vV"/>
+                        <viewControllerLayoutGuide type="bottom" id="BC3-jW-AmE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cG5-jl-6k3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1696.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="65O-QK-yUv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2cg-u1-zKn"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2in-xc-c5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="619"/>
+        </scene>
+        <!--Chalbang Image View Controller-->
+        <scene sceneID="UMS-xw-OGM">
+            <objects>
+                <viewController storyboardIdentifier="HakenmanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uge-oX-Vhm" customClass="ChalbangImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Spd-S9-5Kz"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQE-GH-0re"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KKS-Ya-Nn8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1479.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="bmd-hH-Rjd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GDS-eP-qgR"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bz-2f-5Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="171"/>
+        </scene>
+        <!--Chalbang Image View Controller-->
+        <scene sceneID="OQX-63-Uq5">
+            <objects>
+                <viewController storyboardIdentifier="ShimKungViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Tw-KJ-iF0" customClass="ChalbangImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WNI-lj-GOT"/>
+                        <viewControllerLayoutGuide type="bottom" id="pep-W4-eqH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gxr-19-1b7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1703.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="G4k-Mt-zt5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6z0-Mf-VIb"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tq-IS-E9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="-233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Ns-sx-qZI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVQ-Sj-xsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Fd6-LA-bf0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Aqy-9c-HGb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ljl-TL-CC3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Apc-qB-Wvh" kind="relationship" relationship="rootViewController" id="vy1-oK-27E"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1301" y="156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1252.PNG" width="500" height="579"/>
+        <image name="IMG_1479.PNG" width="512" height="512"/>
+        <image name="IMG_1696.JPG" width="657" height="444"/>
+        <image name="IMG_1703.JPG" width="500" height="500"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
