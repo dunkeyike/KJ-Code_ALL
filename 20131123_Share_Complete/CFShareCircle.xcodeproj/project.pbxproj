@@ -25,7 +25,6 @@
 		C0B30EEA183C82E8003BDB73 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B30EE9183C82E8003BDB73 /* MessageUI.framework */; };
 		C0B30EEC183C88B5003BDB73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B30EEB183C88B5003BDB73 /* Social.framework */; };
 		C0B30EF2183C905D003BDB73 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = C0B30EEE183C905D003BDB73 /* CHANGELOG.md */; };
-		C0B30EF3183C905D003BDB73 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B30EF0183C905D003BDB73 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C0B30EF4183C905D003BDB73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0B30EF1183C905D003BDB73 /* README.md */; };
 		C0B30EF8183C9063003BDB73 /* KakaoLinkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B30EF7183C9063003BDB73 /* KakaoLinkCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C0B30F02183CCEAE003BDB73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B30F01183CCEAE003BDB73 /* Images.xcassets */; };
@@ -57,8 +56,6 @@
 		C0B30EE9183C82E8003BDB73 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C0B30EEB183C88B5003BDB73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C0B30EEE183C905D003BDB73 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		C0B30EEF183C905D003BDB73 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		C0B30EF0183C905D003BDB73 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		C0B30EF1183C905D003BDB73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C0B30EF6183C9063003BDB73 /* KakaoLinkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakaoLinkCenter.h; sourceTree = "<group>"; };
 		C0B30EF7183C9063003BDB73 /* KakaoLinkCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakaoLinkCenter.m; sourceTree = "<group>"; };
@@ -185,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				C0B30EEE183C905D003BDB73 /* CHANGELOG.md */,
-				C0B30EEF183C905D003BDB73 /* JSONKit.h */,
-				C0B30EF0183C905D003BDB73 /* JSONKit.m */,
 				C0B30EF1183C905D003BDB73 /* README.md */,
 			);
 			name = JSONKit;
@@ -280,7 +275,6 @@
 				4103D86E1680DFF4008AFCFC /* main.m in Sources */,
 				C0B30EF8183C9063003BDB73 /* KakaoLinkCenter.m in Sources */,
 				C0B30EE8183C7E14003BDB73 /* CFSharer.m in Sources */,
-				C0B30EF3183C905D003BDB73 /* JSONKit.m in Sources */,
 				41C80695173ABB5600B84ED6 /* AppDelegate.m in Sources */,
 				41C80698173ABB5600B84ED6 /* ViewController.m in Sources */,
 				C0B30EE7183C7E14003BDB73 /* CFShareCircleView.m in Sources */,

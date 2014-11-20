@@ -4,7 +4,7 @@
 // @version 2.0
 //
 #import "KakaoLinkCenter.h"
-#import "JSONKit.h"
+//#import "JSONKit.h"
 
 static NSString *StringByAddingPercentEscapesForURLArgument(NSString *string) {
 	NSString *escapedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
